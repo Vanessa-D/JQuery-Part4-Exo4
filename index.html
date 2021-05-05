@@ -8,21 +8,23 @@
     <title>Exercice 4 - Jquery</title>
 </head>
 <body>
-    <p class="mb-5">Au clic sur un bouton de couleur, modifier la couleur du texte de la div :</p>
-    
-    <div class="container">
-        <p id="text" class="text-justify mt-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed fugit, earum nostrum atque dolore autem quisquam voluptates neque rem dignissimos commodi sequi alias deleniti architecto rerum, ab, quae animi?
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ut ipsam eos vitae a ipsa sit neque, consequatur, harum vel quod modi officia dolor dignissimos in! At voluptate natus deserunt.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis repellat numquam veritatis ex assumenda autem fugiat blanditiis tempore ducimus at, recusandae deleniti velit beatae magni est rerum quod! Praesentium! 
-        </p>
-        <div class="d-flex">
-            <div id="brown" class="color mr-2" style="background-color: brown; height: 30px; width: 30px;"></div>
-            <div id="burlywood" class="color mr-2" style="background-color: burlywood; height: 30px; width: 30px;"></div>
-            <div id="cadetblue" class="color mr-2" style="background-color: cadetblue; height: 30px; width: 30px;"></div>
+    <p class="mb-5">
+        Créer une div colorée et cinq boutons.<br>
+        Un pour augmenter la hauteur de la div, un pour la faire disparaitre, un pour changer sa couleur, un pour revenir à la couleur initiale, et un pour la faire réapparaître :
+    </p>
+    <div class="container text-center">
+        <div class="d-flex justify-content-center">
+            <div id="coloredDiv" class="color mr-2" style="background-color: burlywood; height: 50px; width: 50px;"></div>
+        </div>
+        <div id="buttons" class="mt-5">
+            <button id="increaseHeight" type="button" class="btn btn-light">Grandit</button>
+            <button id="decreaseHeight" type="button" class="btn btn-light">Rétrécit</button>
+            <button id="disappear" type="button" class="btn btn-light">Disparaît</button>
+            <button id="changeColor" type="button" class="btn btn-light">Change de couleur</button>
+            <button id="resetColor" type="button" class="btn btn-light">Revient à la couleur de départ</button>
+            <button id="reappear" type="button" class="btn btn-light">Réapparaît</button>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
